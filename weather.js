@@ -3,7 +3,7 @@ getWeather(); // get weather saved in localstorage, if any.
 function getData() // Creates url from searchinput.
 {
 	let searchTerm = document.getElementById("search").value; 
-    let url ="http://api.apixu.com/v1/current.json?key=a25dc1ab2a1d43b680174721180506&q="+ searchTerm;
+    let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ searchTerm;
 
         if (searchTerm == "") // checks if searchfield is empty - display error message.
         {
