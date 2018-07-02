@@ -1,4 +1,4 @@
-# VinnoVera Weather.
+# Vinnovera Weather.
 
 <b>This is a weathersite created using Apixu weather. </b>
 
