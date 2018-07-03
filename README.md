@@ -24,7 +24,7 @@ I chose to do this to create a colorpattern regardless of citychoise nor actuall
 
 <b>Choises:</b>
 * I made some choises on my own. Like leaving the long shadows visible on mobileversion and adding some extra box-shadow. Purely because I feelt it was pretty. 
-* I desided after talking to a fellow apprentice, to give localstorage a go, just of pure curiosity, though I just briefly touched the subject before. So the solutions for save, get, delete from localstorage might have improvements to claim. Yet I saw it as a chance to learn.
+* I desided after talking to a fellow apprentice, to give localstorage a go, out of pure curiosity, though I just briefly touched the subject before. So the solutions for save, get, delete from localstorage might have improvements to claim. Yet I saw it as a chance to learn.
 
 <b>Other:</b>
 My thought´s after creating it
