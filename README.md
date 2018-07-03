@@ -4,7 +4,7 @@
 
 An assignment to follow guidelines and recreate apperance/design from - https://github.com/vinnovera/arbetsprov.
 
-Containing a searchfield to search for a city´s current weather. 
+Containing a searchfield to search for cities current weather. 
 
 The city´s weather is displayed with current temperature, cityname, country and a icon (not from Apixu).
 The icon images are .svg and they where change in the svgfile to match the color of the desired design. Also the gray background grid was removed from the .svg.
