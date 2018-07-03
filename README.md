@@ -19,7 +19,7 @@ I chose to do this to create a colorpattern regardless of citychoise or actuall 
 <b>Improvements:</b>
 * Icons displayed are only daytime images. A improvement would be to include nighttime icons as well with equivalent time.
 * Building modules.
-* Optimazation- browsers.
+* Optimazation- browsers. (only tested in Chrome)
 * Add more media queries.
 
 <b>Choises:</b>
