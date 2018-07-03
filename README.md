@@ -13,7 +13,7 @@ So when entring the site, previously searched cities saved in localstorage will 
 
 I made the colors of the weather divs in css (:nth-child 3n+1, 3n+2..),creating 3 diffrent colors and the same pattern.
 
-<b><i>[APIKEY] is not availiable in the code/ should be replaced with actuall key.</i></b>
+<b><i>Please note: [APIKEY] is not availiable in the code/ should be replaced with actuall key.</i></b>
 
 <b>Improvements:</b>
 * Icons displayed are only daytime images. A improvement would be to include nighttime icons as well.
