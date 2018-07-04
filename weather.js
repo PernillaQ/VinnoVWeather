@@ -3,7 +3,7 @@ getWeather(); // get weather saved in localstorage, if any.
 function getData() // Creates url from searchinput.
 {
 	let searchTerm = document.getElementById("search").value; 
-    let url ="http://api.apixu.com/v1/current.json?key=a25dc1ab2a1d43b680174721180506&q="+ searchTerm;
+    let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ searchTerm;
 
         if (searchTerm == "") // checks if searchfield is empty - display error message.
         {
@@ -65,7 +65,6 @@ function create(url)
             city.appendChild(text);
             info.appendChild(city);
             weatherWrapper.appendChild(info);
-            document.getElementById("contain").appendChild(weatherWrapper);
 
             const btnWrapper = document.createElement("div");
             btnWrapper.setAttribute("class", "btn-wrapper");
@@ -127,7 +126,7 @@ function getWeather()
     {
         // ..else for each city from localstorage set a new url and then create the div from res in create(url).
         theWeather.forEach(city => {
-            let url ="http://api.apixu.com/v1/current.json?key=a25dc1ab2a1d43b680174721180506&q="+ city;
+            let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ city;
             create(url);   
             })
     }
