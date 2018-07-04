@@ -97,10 +97,9 @@ body
 .weather-wrapper h3
 {
     margin-bottom: 0em;
-    margin-top: 0em;
     font-size: 1em;
 }
-.weather-wrapper p
+.info-wrapper p
 {
     display: flex;
     font-family: "Lato";
@@ -251,9 +250,9 @@ h2
 }
 .img-wrapper img
 {
-	width: 60%;
-	height: auto;
-	margin-top: 0em;
+    width: 55%;
+    height: auto;
+    margin-top: 0em;
     margin-left: 1em;
 }
 .info-wrapper
@@ -306,14 +305,14 @@ h2
         flex-direction: column;
         margin-top: 1em;
 	}
-	.weather-wrapper p
+	.info-wrapper p
 	{
 	    align-self: flex-end;
 	    font-size: 3.5em;
-        margin-bottom: 1em;
-        margin-right: 0.25em;
+        margin-bottom: 1.1em;
+        margin-right: 0.5em;
 	}
-	.weather-wrapper h3
+	.info-wrapper h3
 	{
 	    font-size: 0.7em;
         padding-right: 1.5em;
@@ -322,27 +321,30 @@ h2
 	}
 	.img-wrapper 
 	{
-	    display: flex;
-        justify-content: flex-start;
+       display: flex;
+       order: 2;
+       z-index: 998;
+       margin-top: 0.5em;
 	}
 	.img-wrapper img 
 	{
-	    width: 5em;
-        margin-top: 1.2em;
-        position: absolute;
-        margin-left: 0.5em;
+	   width: 4em;
+       height: auto;
+       margin-top: 1.5em;
+       position: absolute;
+       margin-left: 1em;
 	}
 	.btn-wrapper
 	{
-    	display: flex;
-    	align-self: flex-end;
-	    margin-left: 1em;
+        display: flex;
+        order: 1;
+        align-self: flex-end;
+        margin-left: 1em;
 	}  
 	.info-wrapper
 	{
 	    display: flex;
         flex-direction: column;
-        order: -1;
 	}
 }
 @media only screen and (min-width: 2560px)
