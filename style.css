@@ -14,6 +14,7 @@ body
     background-size: cover;
     background-repeat: no-repeat;
     margin:0 auto;
+    font-family: "Lato", sans-serif;
 }
 .container
 {
@@ -34,7 +35,6 @@ body
 .error-wrapper
 {
     color: #4a4a4a;
-    font-family: "lato";
 }
 .allWeathers
 {
@@ -48,7 +48,6 @@ body
     display: flex;
     align-self: center;
     flex-direction: row;
-    font-family: "Lato";
     letter-spacing: 0.1em;
     background:linear-gradient( to bottom right, #e6b261, #e1b062);
     color:#ffffff;
@@ -65,7 +64,6 @@ body
     display: flex;
     align-self: center;
     flex-direction: row;
-    font-family: "Lato";
     letter-spacing: 0.1em;
     background:linear-gradient( to bottom right, #88dcef, #84daf0);
     color:#ffffff;
@@ -82,7 +80,6 @@ body
     display: flex;
     align-self: center;
     flex-direction: row;
-    font-family: "Lato";
     letter-spacing: 0.1em;
     background:linear-gradient( to bottom right, #ec9860, #e99761);
     color:#ffffff;
@@ -102,7 +99,6 @@ body
 .info-wrapper p
 {
     display: flex;
-    font-family: "Lato";
     font-weight: 300;
     font-size: 2.5em;
     margin: 0em;
@@ -111,7 +107,7 @@ body
 {
     display: flex;
     justify-content: flex-start;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     margin-top: 0.4em;
     content:"°C";
     font-size:0.3em;	
@@ -207,7 +203,6 @@ body
 }
 label
 {
-	font-family: "Lato";
 	display: flex;
     align-self: center;
     padding-left: 0.5em;
@@ -226,7 +221,7 @@ label
 {    
 	background-color: #ffffff;
 	color: #c7dd34;
-	padding: 0.2em 0.5em 0.2em 0em;
+	padding: 0.2em 0.5em;
 	font-size: 1.75em;
 	font-weight: bold;
 	border-bottom-right-radius: 0.25em;
