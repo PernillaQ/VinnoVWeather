@@ -232,6 +232,7 @@ label
 .search input:focus, .search button:focus, .weather-wrapper:nth-child(3n+3) .btn, .weather-wrapper:nth-child(3n+2) .btn, .weather-wrapper:nth-child(3n+1) .btn
 {
 	outline-color:#464646;
+	background-color: #ffffff;
 }
 h2
 {
