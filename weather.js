@@ -3,7 +3,7 @@ getWeather(); // get weather saved in localstorage, if any.
 function getData() // Creates url from searchinput.
 {
 	let searchTerm = document.getElementById("search").value; 
-    let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ searchTerm;
+    let url ="http://api.apixu.com/v1/current.json?key=a25dc1ab2a1d43b680174721180506&q="+ searchTerm;
 
         if (searchTerm == "") // checks if searchfield is empty - display error message.
         {
@@ -101,7 +101,7 @@ function saveWeather(cityId)
     {
         let cities = localStorage.getItem("cities");
         let citiesArr = JSON.parse(cities);
-     // Check if city´s not already included. If not - add.
+
         if (citiesArr.includes(cityId) === false)
         {
             citiesArr.push(cityId);
@@ -126,7 +126,7 @@ function getWeather()
     {
         // ..else for each city from localstorage set a new url and then create the div from res in create(url).
         theWeather.forEach(city => {
-            let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ city;
+            let url ="http://api.apixu.com/v1/current.json?key=a25dc1ab2a1d43b680174721180506&q="+ city;
             create(url);   
             })
     }
