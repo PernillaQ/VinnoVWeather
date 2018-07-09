@@ -1,6 +1,6 @@
 getWeather(); // get weather saved in localstorage, if any.
 
-function getData(city) // Creates url from searchinput and create div with cities from localstorage if any.
+function getData(city) // Creates url from searchinput and create div with cities from localstorage.
 {
     const url ="https://api.apixu.com/v1/current.json?key=[APIKEY]&q=";
     let searchTerm = document.getElementById("search").value; 
@@ -242,3 +242,14 @@ function getIcon(iconCode)
     }
     return icon;
 }
+
+// (W3Schools) Trigger onclick event by pressing enter. Executes a function when releasing key on keyboard.
+var input = document.getElementById("search");
+input.addEventListener("keyup", function(event) {
+
+  if (event.keyCode === 13) 
+  { // 13 = "Enter" key on the keyboard
+    document.getElementById("searchBtn").click(); 
+  }
+});
+
