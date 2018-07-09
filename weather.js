@@ -119,7 +119,7 @@ function saveWeather(cityId)
     }     
 }    
 
-function getWeather(url)
+function getWeather()
 {
     /* To display the previously saved cities from localstorage. 
      * Get, parse, if there are no cities - error message.
