@@ -9,7 +9,7 @@ Containing a searchfield to search for cities current weather.
 The city´s weather is displayed with current temperature, cityname, country and a icon (not from Apixu).
 The icon images are .svg and they where changed in the svgfile to match the color of the desired design. Also the gray background grid was removed from the svgfile.
 
-When entring the site, previously searched cities saved in localstorage will be displayed. One can remove a city div/localstorage and add more.
+When entering the site, previously searched cities saved in localstorage will be displayed. One can remove a city div/localstorage and add more.
 
 I made the colors of the weather divs in css (:nth-child 3n+1, 3n+2..),creating 3 diffrent colors.
 I chose to do this to create a colorpattern regardless of citychoise or actuall weather.
