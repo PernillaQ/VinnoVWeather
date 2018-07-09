@@ -1,6 +1,6 @@
 getWeather(); // get weather saved in localstorage, if any.
 
-function getData(city) // Creates url from searchinput and create div with cities from localstorage.
+function getData(city) // Creates url from searchinput and create div with cities from localstorage if any.
 {
     const url ="https://api.apixu.com/v1/current.json?key=[APIKEY]&q=";
     let searchTerm = document.getElementById("search").value; 
