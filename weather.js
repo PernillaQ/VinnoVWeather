@@ -1,22 +1,31 @@
 getWeather(); // get weather saved in localstorage, if any.
 
-function getData() // Creates url from searchinput.
+function getData(city) // Creates url from searchinput and create div with cities from localstorage.
 {
-	let searchTerm = document.getElementById("search").value; 
-    let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ searchTerm;
+    const url ="https://api.apixu.com/v1/current.json?key=[APIKEY]&q=";
+    let searchTerm = document.getElementById("search").value; 
+    let searchUrl = url + searchTerm;
 
-        if (searchTerm == "") // checks if searchfield is empty - display error message.
+    if ( city == undefined) 
+    {
+         if (searchTerm == "") // checks if searchfield is empty - display error message.
         {
             document.getElementById("errorMessage").innerHTML = ("Write a city, please.");
         }
         else
         {
             document.getElementById("errorMessage").innerHTML = ""; // clear error message.
-            create(url);
+            create(searchUrl);
         }
+    }
+    else // city not undefined, city from localStorage - getWeather()
+    {
+        let cityUrl = url + city; 
+        create(cityUrl);
+    }
 }
 
-function create(url)
+function create(url)// ändra till 2 inparametrar? if searchur == true, ???
 {
     fetch(url)
     .then(res => res.json())
@@ -110,7 +119,7 @@ function saveWeather(cityId)
     }     
 }    
 
-function getWeather()
+function getWeather(url)
 {
     /* To display the previously saved cities from localstorage. 
      * Get, parse, if there are no cities - error message.
@@ -126,8 +135,7 @@ function getWeather()
     {
         // ..else for each city from localstorage set a new url and then create the div from res in create(url).
         theWeather.forEach(city => {
-            let url ="http://api.apixu.com/v1/current.json?key=[APIKEY]&q="+ city;
-            create(url);   
+            getData(city);   
             })
     }
 }
