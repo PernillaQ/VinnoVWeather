@@ -1,6 +1,6 @@
 getWeather(); // get weather saved in localstorage, if any.
 
-function getData(city) // Creates url from searchinput and create div with cities from localstorage.
+function getData(city) // Creates urls from searchinput and cities from localstorage.
 {
     const url ="https://api.apixu.com/v1/current.json?key=[APIKEY]&q=";
     let searchTerm = document.getElementById("search").value; 
@@ -25,7 +25,7 @@ function getData(city) // Creates url from searchinput and create div with citie
     }
 }
 
-function create(url)// ändra till 2 inparametrar? if searchur == true, ???
+function create(url)// url from searchfield or cities - localstorage.
 {
     fetch(url)
     .then(res => res.json())
@@ -247,8 +247,8 @@ function getIcon(iconCode)
 var input = document.getElementById("search");
 input.addEventListener("keyup", function(event) {
 
-  if (event.keyCode === 13) 
-  { // 13 = "Enter" key on the keyboard
+  if (event.keyCode === 13)  // 13 = "Enter" key.
+  {
     document.getElementById("searchBtn").click(); 
   }
 });
